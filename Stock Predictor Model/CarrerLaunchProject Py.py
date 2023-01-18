@@ -18,7 +18,8 @@ from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, LSTM
 
 # For reading stock data from yahoo
-from pandas_datareader.data import DataReader
+#import pandas as pd
+#from pandas_datareader.data import DataReader
 import yfinance as yf
 
 # For time stamps

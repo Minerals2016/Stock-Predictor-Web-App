@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64c2ff78-49f1-41e4-b9e7-abb19a3a4f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Stock-Predictor-Web-App.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Stock-Predictor-Web-App.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock Predictor Model/CarrerLaunchProject Py.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock Predictor Model/CarrerLaunchProject Py.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Streamlit Web App/stockpredictornii.py" beforeDir="false" afterPath="$PROJECT_DIR$/Streamlit Web App/stockpredictornii.py" afterDir="false" />
@@ -41,10 +38,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "0d570cb2-96df-43cc-80da-7f777e6d0afe"
+    "last_opened_file_path": "C:/Users/Jimmy/Documents/GitHub/Stock-Predictor-Web-App/Streamlit Web App",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.CarrerLaunchProject Py">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jimmy\Documents\GitHub\Stock-Predictor-Web-App\Streamlit Web App" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.stockpredictornii">
     <configuration name="CarrerLaunchProject Py" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Stock-Predictor-Web-App" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,7 +91,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stockpredictor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="model_script (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Stock-Predictor-Web-App" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -96,11 +100,31 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Streamlit Web App" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Streamlit Web App/stockpredictor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Streamlit Web App/model_script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="model_script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Stock-Predictor-Web-App" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask Web App/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask Web App/model/model_script.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,17 +156,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.model_script" />
+      <item itemvalue="Python.model_script (1)" />
       <item itemvalue="Python.CarrerLaunchProject Py" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.stockpredictor" />
       <item itemvalue="Python.stockpredictornii" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.CarrerLaunchProject Py" />
         <item itemvalue="Python.stockpredictornii" />
+        <item itemvalue="Python.model_script (1)" />
+        <item itemvalue="Python.model_script" />
+        <item itemvalue="Python.CarrerLaunchProject Py" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.stockpredictor" />
       </list>
     </recent_temporary>
   </component>
@@ -156,5 +182,16 @@
       <updated>1673903665665</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
