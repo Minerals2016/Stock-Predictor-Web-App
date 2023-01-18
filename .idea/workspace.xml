@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64c2ff78-49f1-41e4-b9e7-abb19a3a4f54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Stock-Predictor-Web-App.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock Predictor Model/CarrerLaunchProject Py.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock Predictor Model/CarrerLaunchProject Py.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Streamlit Web App/model_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Streamlit Web App/model_script.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Streamlit Web App/stockpredictornii.py" beforeDir="false" afterPath="$PROJECT_DIR$/Streamlit Web App/stockpredictornii.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +39,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Jimmy/Documents/GitHub/Stock-Predictor-Web-App/Streamlit Web App",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jimmy\Documents\GitHub\Stock-Predictor-Web-App\Streamlit Web App" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jimmy\Documents\GitHub\Stock-Predictor-Web-App" />
     </key>
   </component>
   <component name="RunManager" selected="Python.stockpredictornii">

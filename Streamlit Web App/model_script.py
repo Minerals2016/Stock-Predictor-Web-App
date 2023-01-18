@@ -1,11 +1,12 @@
 # replacement for current API: https://rapidapi.com/sparior/api/mboum-finance
+"""
 symbol = "AAPL"
 start = "2012-01-01"
 end = "2019-12-17"
-
+"""
 def model(symbol, start, end):
     # Library import
-    print("yes")
+    #print("yes")
     import math
     #import pandas_datareader as web
     import numpy as np
@@ -189,7 +190,7 @@ def model(symbol, start, end):
     df3 = stock2.history(interval='1d', start='2019-12-18', end='2019-12-19')
     print(df3["Close"].values)
 
-model(symbol, start, end)
+#model(symbol, start, end)
 
 '''
 import pickle

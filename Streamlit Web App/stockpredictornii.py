@@ -3,18 +3,12 @@ import datetime
 from datetime import date
 import yfinance as yf
 from plotly import graph_objs as go
-
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-sns.set_style('whitegrid')
-plt.style.use("fivethirtyeight")
+from model_script import model
 
 header = st.container()
 user_input = st.container()
 data_table = st.container()
-data_graph = st.container ()
+data_graph = st.container()
 model_training = st.container()
 
 with header:
@@ -37,6 +31,7 @@ with data_table:
         data.reset_index(inplace=True)
         return data
 
+
     data_load_state = st.text('Load data...')
     data = load_data(selected_stock)
     data_load_state.text('Loading data... done!')
@@ -45,14 +40,16 @@ with data_table:
     st.write(data.head(7))
 
 with data_graph:
-# Plot raw data
+    # Plot raw data
     def plot_raw_data():
         fig = go.Figure()
         fig.add_trace(go.Scatter(x=data['Date'], y=data['Open'], name="stock_open"))
         fig.add_trace(go.Scatter(x=data['Date'], y=data['Close'], name="stock_close"))
         fig.layout.update(title_text='Time Series data with Rangeslider', xaxis_rangeslider_visible=True)
         st.plotly_chart(fig)
+
+
     plot_raw_data()
 
 with model_training:
-    st.write("owo")
+    model(selected_stock, START, END)
