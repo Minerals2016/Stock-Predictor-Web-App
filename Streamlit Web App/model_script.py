@@ -15,6 +15,10 @@ def model(symbol, start, end):
     from keras.models import Sequential
     from keras.layers import Dense, LSTM
     import matplotlib.pyplot as plt
+    import streamlit as st
+    #import plotly as pl
+    from plotly import graph_objs as go
+
     plt.style.use('fivethirtyeight')
 
     # other
@@ -100,6 +104,7 @@ def model(symbol, start, end):
     # Train the model
     model.fit(x_train, y_train, batch_size=1, epochs=1)
 
+
     # Create testing dataset
     # Create a new array containing scaled values from index 397 to 571
     test_data = scaled_data[training_data_len - 60:, :]
@@ -127,15 +132,19 @@ def model(symbol, start, end):
     train = data[:training_data_len]
     valid = data[training_data_len:]
     valid['Predictions'] = predictions
-    # Visualize the data
-    plt.figure(figsize=(16, 8))
-    plt.title("$" + symbol + " Prediction Model")
-    plt.xlabel('Date', fontsize=18)
-    plt.ylabel('Close Price USD ($)', fontsize=18)
-    plt.plot(train['Close'])
-    plt.plot(valid[['Close', 'Predictions']])
-    plt.legend(['Train', 'Val', 'Predictions'], loc='lower right')
-    # plt.show()
+    def predicted_graph():
+        train.reset_index(inplace=True)
+        valid.reset_index(inplace=True)
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(x=train['Date'], y=train['Close'], name="stock_close"))
+        fig.add_trace(go.Scatter(x=valid['Date'], y=valid['Predictions'], name="stock_pred"))
+        #fig.add_trace(go.Scatter(x=valid['Date'], y=valid[['Close','Predictions']], name="stock_pred"))
+        fig.layout.update(title_text='Predicted dataset of $' + symbol, xaxis_rangeslider_visible=True)
+        st.plotly_chart(fig)
+    predicted_graph()
+
+
+
 
     # Worked till video timestamp 40:30
     # https://youtu.be/QIUxPv5PJOY?t=2430
@@ -149,9 +158,9 @@ def model(symbol, start, end):
     # today = date.today()
 
     # get stock information
-    symbol2 = "AAPL"
+    symbol2 = symbol
     stock2 = yf.Ticker(symbol2)
-    df2 = stock2.history(interval='1d', start='2012-01-01', end='2019-12-17')
+    df2 = stock2.history(interval='1d', start=start, end=end)
 
     # Create new dataframe with only the close column
     new_df = df2.filter(["Close"])
@@ -182,18 +191,15 @@ def model(symbol, start, end):
     pred_price = scaler.inverse_transform(pred_price)
 
     # print prediction
-    print(pred_price)
+    st.write(pred_price[0])
 
     # Get the actual quote
-    symbol3 = "AAPL"
+    symbol3 = symbol
     stock3 = yf.Ticker(symbol3)
-    df3 = stock2.history(interval='1d', start='2019-12-18', end='2019-12-19')
-    print(df3["Close"].values)
+    df3 = stock2.history(interval='1d', start=start, end=end)
+    #if end != today:
+    actual = (df3["Close"].values)
+    st.write(actual[-1])
 
 #model(symbol, start, end)
 
-'''
-import pickle
-with open('stock_predictor_model_a.pkl', 'wb') as file:
-	pickle.dump(model, file)
-'''
