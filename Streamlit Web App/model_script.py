@@ -191,7 +191,7 @@ def model(symbol, start, end):
     pred_price = scaler.inverse_transform(pred_price)
 
     # print prediction
-    st.write(pred_price[0])
+    st.text("Predicted price: " + str(pred_price[0]))
 
     # Get the actual quote
     symbol3 = symbol
@@ -199,7 +199,8 @@ def model(symbol, start, end):
     df3 = stock2.history(interval='1d', start=start, end=end)
     #if end != today:
     actual = (df3["Close"].values)
-    st.write(actual[-1])
+    if end == today:
+        st.text("Actual price: " + str(actual[-1]))
 
 #model(symbol, start, end)
 

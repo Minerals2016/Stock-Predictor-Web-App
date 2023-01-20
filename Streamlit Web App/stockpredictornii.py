@@ -50,7 +50,7 @@ with stock_close_data:
         data = data.sort_index(ascending=False)
         data.reset_index(inplace=True)
         return data
-    
+
     data = load_data(selected_stock)
     st.subheader('Stock Closing Price History')
     st.write(data.head(7))
