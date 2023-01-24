@@ -199,7 +199,7 @@ def model(symbol, start, end):
     df3 = stock2.history(interval='1d', start=start, end=end)
     #if end != today:
     actual = (df3["Close"].values)
-    if end == today:
+    if end != today:
         st.text("Actual price: " + str(actual[-1]))
 
 #model(symbol, start, end)

@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64c2ff78-49f1-41e4-b9e7-abb19a3a4f54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Streamlit Web App/keras_model.h5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Streamlit Web App/model_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Streamlit Web App/model_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streamlit Web App/stockpredictornii.py" beforeDir="false" afterPath="$PROJECT_DIR$/Streamlit Web App/stockpredictornii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Streamlit Web App/stockpredictor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Streamlit Web App/stockpredictor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Streamlit Web App/stockpredictornii.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Streamlit Web App/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,7 @@
       <recent name="C:\Users\Jimmy\Documents\GitHub\Stock-Predictor-Web-App\Streamlit Web App" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jimmy\Documents\GitHub\Stock-Predictor-Web-App\Streamlit Web App" />
       <recent name="C:\Users\Jimmy\Documents\GitHub\Stock-Predictor-Web-App" />
     </key>
   </component>
@@ -135,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stockpredictornii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="stockpredictor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Stock-Predictor-Web-App" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,7 +151,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Streamlit Web App/stockpredictornii.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Jimmy\Documents\GitHub\Stock-Predictor-Web-App\Streamlit Web App\stockpredictor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
